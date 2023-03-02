@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --facebook: #3b5998;
+    --twitter: #1da1f2;
+    --instagram: #e1306c;
+    --youtube: #ff0000;
+    --whatsapp: #25d366;
+    --linkedin: #0077b5;
+    --github: #333;
+    --pinterest: #bd081c;
+    --tiktok: #000; 
+}
+
+body{
+    /*background: black url(/img/fondo\ digital\ azul.webp) center fixed no-repeat;*/
+    BACKGROUND: black;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.centrado{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 20px 20px 20px;
+}
+.borde-personal{
+    border: 2px solid rgb(168, 10, 10);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,181,45,0.7091211484593838) 50%);
+}
+.navbar-brand{
+    font-family: 'Staatliches', cursive;
+    font-family: 'Unbounded', cursive;
+    /** text-transform: lowercase; */
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.container{
+    background: black;
+    /*background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%);*/
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+}
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-family: 'Unbounded', cursive;
+    /** text-transform: lowercase; */
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+/**h1 span{
+    color: black;
+}*/
+#acerca-de-mi{
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+}
+h2{
+    font-family: 'Staatliches', cursive;
+    font-family: 'Unbounded', cursive;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align: center;
+    font-size: medium;
+}
+.fondo-imagen{
+    background-color: rgb(21,25,29);
+}
+.profile-item{
+    text-transform: capitalize;
+    list-style-type:none
+}
+/** contenerdor de redes sociales */
+.contenedor-redes{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    align-items: center; ;
+    justify-content: center;
+    background: black url(/img/fondo\ digital\ azul.webp) center fixed no-repeat;
+}
+.contenedor-redes ul li{
+    flex-direction: row;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.contenedor-redes a{
+    align-items: center;
+    margin: 10px;
+    padding: 0 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+    transition: .2s;
+}
+.facebook:hover{background: var(--facebook);}
+.twitter:hover{background: var(--twitter);}
+.instagram:hover{background: var(--instagram);}
+.youtube:hover{background: var(--youtube);}
+.whatsapp:hover{background: var(--whatsapp);}
+.linkedin:hover{background: var(--linkedin);}
+.github:hover{background: var(--github);}
+.pinterest:hover{background: var(--pinterest);}
+.tiktok:hover{background: var(--tiktok);}
+.contenedor-redes a:hover{transform: translateY(-5px);}
+
+/** seccion de habilidades */
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.habilidades .row .card{
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px auto;
+}
+
+/** seccion experiencia */
+.experiencia {
+    background: black url(/img/fondo\ digital\ azul.webp) center fixed no-repeat;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.experiencia .row .card{
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/** seccion de contacto */
+#contacto{
+    background: black;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.contacto{
+    background: white;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* FLIP CARD */
+.cards-grid {
+    display: flex;
+    grid-gap: 80px;
+    padding-bottom: 60px;
+  }
+.flip-card {
+    width: 320px;
+    height: 504px;
+    perspective: 2000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+    transform-style: preserve-3d;
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+  .flip-card-back {
+    font-size: 1.25rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 32px;
+    background-color: #B1CFC8;
+    transform: rotateY(180deg);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
